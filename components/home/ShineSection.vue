@@ -174,7 +174,7 @@
 
     &__list-item {
       display: flex;
-      gap: 0.5rem;
+      gap: 1rem;
       font-size: 1.5rem;
       font-weight: 300;
       text-align: left;
@@ -182,11 +182,14 @@
 
       span {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
+
+        @include mixins.desktop {
+          align-items: center;
+        }
       }
 
       @include mixins.desktop {
-        gap: 1rem;
         font-size: 2rem;
       }
     }

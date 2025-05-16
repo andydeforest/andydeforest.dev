@@ -44,7 +44,7 @@ li {
 }
 
 .section-title {
-  padding: 2rem 0;
+  padding-bottom: 2rem;
 
   @include bulmaMixins.desktop {
     padding: 4rem 0;
