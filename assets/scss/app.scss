@@ -1,6 +1,10 @@
-@use "typography";
 @use "variables" as variables;
 @use "bulma/sass";
+@use "typography";
+
+html {
+  scroll-behavior: smooth !important;
+}
 
 .is-brutal {
   box-shadow: variables.$global-box-shadow;

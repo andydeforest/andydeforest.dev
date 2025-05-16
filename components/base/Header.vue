@@ -6,6 +6,7 @@
         <NuxtLink v-for="link in nav.topNav" :key="link.to" :to="link.to" class="nav-link">
           {{ link.label }}
         </NuxtLink>
+        <BaseResumeLink />
       </nav>
       <div class="is-hidden-tablet">
         <BaseMobileNav />
@@ -60,7 +61,7 @@
       gap: 2rem;
     }
 
-    .nav-link {
+    a {
       color: $text;
       font-weight: 500;
       text-decoration: none;

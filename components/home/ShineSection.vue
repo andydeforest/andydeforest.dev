@@ -133,7 +133,11 @@
     &__cards {
       display: flex;
       flex-direction: column;
-      gap: 3rem;
+      gap: 6rem;
+
+      @include mixins.desktop {
+        gap: 3rem;
+      }
 
       .base-card {
         padding-top: 0 !important;
@@ -172,8 +176,9 @@
       display: flex;
       gap: 0.5rem;
       font-size: 1.5rem;
-      font-weight: 100;
+      font-weight: 300;
       text-align: left;
+      color: $text;
 
       span {
         display: flex;
@@ -181,6 +186,7 @@
       }
 
       @include mixins.desktop {
+        gap: 1rem;
         font-size: 2rem;
       }
     }

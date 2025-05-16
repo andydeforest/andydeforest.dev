@@ -22,6 +22,10 @@
           <span v-else>andydeforest (at) gmail (dot) com</span>
         </template>
       </li>
+      <li>
+        📝
+        <BaseResumeLink />
+      </li>
     </ul>
   </BaseSection>
 </template>
@@ -71,7 +75,7 @@
       gap: 2rem;
       text-align: center;
 
-      @include mixins.desktop {
+      @include mixins.tablet {
         justify-content: center;
         flex-direction: row;
       }
@@ -84,6 +88,7 @@
         }
 
         a {
+          color: $link-color;
           text-decoration: underline;
         }
       }

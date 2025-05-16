@@ -147,8 +147,11 @@
     &__project {
       display: flex;
       flex-direction: column;
-      margin-bottom: 3rem;
       gap: 2rem;
+
+      &:not(:last-of-type) {
+        margin-bottom: 5rem;
+      }
 
       @include mixins.desktop {
         flex-direction: row;
@@ -179,16 +182,23 @@
       gap: 1rem;
       justify-content: center;
       text-align: left;
-      padding: 1rem;
+
+      @include mixins.desktop {
+        padding: 1rem;
+      }
 
       h2 {
         font-size: 2rem;
       }
 
+      strong {
+        color: $text;
+      }
+
       a {
         text-decoration: underline;
         font-weight: 700;
-        color: #0047ff;
+        color: $link-color;
         font-size: 1rem;
         font-family: monospace;
       }

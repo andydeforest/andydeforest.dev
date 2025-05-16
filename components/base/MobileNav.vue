@@ -2,21 +2,26 @@
   <div class="base-mobile-nav">
     <div class="base-mobile-nav__handle">
       <button @click="isOpen = !isOpen">
-        <Menu :size="32" />
+        <component :is="isOpen ? X : Menu" :size="32" />
       </button>
     </div>
-    <div class="base-mobile-nav__menu is-brutal" :class="{ 'is-active': isOpen }">
-      <nav>
-        <NuxtLink v-for="link in nav.topNav" :key="link.to" :to="link.to" class="nav-link" @click="close">
-          {{ link.label }}
-        </NuxtLink>
-      </nav>
-    </div>
+    <ClientOnly>
+      <Teleport to="body">
+        <div class="base-mobile-nav__menu is-brutal" :class="{ 'is-active': isOpen }">
+          <nav>
+            <NuxtLink v-for="link in nav.topNav" :key="link.to" v-bind="link" class="nav-link" @click="close">
+              {{ link.label }}
+            </NuxtLink>
+            <BaseResumeLink @click="close" />
+          </nav>
+        </div>
+      </Teleport>
+    </ClientOnly>
   </div>
 </template>
 
 <script setup lang="ts">
-  import { Menu } from 'lucide-vue-next';
+  import { Menu, X } from 'lucide-vue-next';
 
   const isOpen = ref(false);
   const nav = useNavStore();
@@ -43,11 +48,12 @@
     &__handle {
       button {
         z-index: 9998;
+        color: $text;
       }
     }
 
     &__menu {
-      z-index: 9999;
+      z-index: 9997;
       position: fixed;
       width: 92dvw;
       left: 4dvw;
@@ -70,6 +76,12 @@
         height: 100%;
         text-align: center;
         font-size: 1.5rem;
+
+        a {
+          font-weight: 700;
+          color: $text;
+          text-decoration: underline;
+        }
       }
     }
   }

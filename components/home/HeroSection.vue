@@ -15,9 +15,6 @@
         <BaseCta to="/#contact">Let's Talk</BaseCta>
       </div>
     </div>
-    <!--
-    <div class="home-hero-section__image" />
-    -->
   </BaseSection>
 </template>
 
@@ -46,6 +43,7 @@
 
     @include mixins.desktop {
       background-image: url('/images/home/hero-background.webp');
+      background-position-y: center;
     }
 
     .gradient-text {
@@ -60,14 +58,15 @@
     &__intro {
       display: flex;
       flex-direction: column;
-      gap: 1.6rem;
+      gap: 1rem;
       z-index: 2;
       background-color: #f9f5f2;
       padding: 2rem;
       border-radius: $global-border-radius;
 
       @include mixins.desktop {
-        max-width: 33vw;
+        gap: 1.6rem;
+        max-width: 1000px;
         padding: 3rem;
       }
 
@@ -81,11 +80,12 @@
       }
 
       strong {
+        color: $text;
         font-weight: 700;
       }
 
       p {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
 
         @include mixins.desktop {
           font-size: 2rem;

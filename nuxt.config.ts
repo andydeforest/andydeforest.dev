@@ -6,6 +6,13 @@ export default defineNuxtConfig({
     baseURL: base,
     head: {
       title: 'Andrew De Forest | Portfolio',
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/x-icon',
+          href: `${base}favicon.ico`
+        }
+      ],
       meta: [
         {
           name: 'description',

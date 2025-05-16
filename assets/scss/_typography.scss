@@ -16,8 +16,13 @@ h6,
 .subtitle {
   font-weight: 900;
   line-height: 100%;
-  color: variables.$text;
+  color: variables.$text !important;
   font-family: variables.$family-heading !important;
+}
+
+p,
+li {
+  color: variables.$text-body;
 }
 
 .title {
