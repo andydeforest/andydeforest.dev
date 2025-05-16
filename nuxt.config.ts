@@ -53,7 +53,8 @@ export default defineNuxtConfig({
   },
 
   googleFonts: {
-    display: 'swap',
+    download: false,
+    inject: true,
     families: {
       Cabin: [400, 500],
       'Noto+Sans': [900]
