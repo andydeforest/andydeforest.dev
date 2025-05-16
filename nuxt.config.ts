@@ -1,16 +1,13 @@
-const base = '/andydeforest.dev/';
-
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   app: {
-    baseURL: base,
     head: {
       title: 'Andrew De Forest | Portfolio',
       link: [
         {
           rel: 'icon',
           type: 'image/x-icon',
-          href: `${base}favicon.ico`
+          href: '/favicon.ico'
         }
       ],
       meta: [
