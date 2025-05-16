@@ -1,7 +1,7 @@
 <template>
   <div class="base-card is-brutal">
     <div v-if="image" class="base-card__image">
-      <img :src="asset(image.src)" :alt="image.alt" />
+      <img :src="image.src" :alt="image.alt" />
     </div>
     <div v-if="cardIcons?.length" class="base-card__icons">
       <template v-for="(icon, index) in cardIcons" :key="index">
@@ -13,9 +13,9 @@
           rel="noopener noreferrer"
           class="base-card__icon-link"
         >
-          <img :src="asset(icon.src)" :alt="`${icon.name} logo`" class="base-card__icon" />
+          <img :src="icon.src" :alt="`${icon.name} logo`" class="base-card__icon" />
         </a>
-        <img v-else :src="asset(icon.src)" :alt="`${icon.name} logo`" :title="icon.name" class="base-card__icon" />
+        <img v-else :src="icon.src" :alt="`${icon.name} logo`" :title="icon.name" class="base-card__icon" />
       </template>
     </div>
     <div class="base-card__content">
@@ -35,9 +35,6 @@
 </template>
 
 <script setup lang="ts">
-  const { app } = useRuntimeConfig();
-  const baseURL = app.baseURL;
-
   interface CardImage {
     src: string;
     alt: string;
@@ -54,9 +51,6 @@
     body?: string;
     cardIcons?: CardIcon[];
   }>();
-
-  // workaround for static/gh pages hosting
-  const asset = (p: string) => `${baseURL.replace(/\/$/, '')}/${p.replace(/^\//, '')}`;
 </script>
 
 <style lang="scss">
