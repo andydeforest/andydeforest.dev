@@ -13,9 +13,9 @@
           rel="noopener noreferrer"
           class="base-card__icon-link"
         >
-          <img :src="icon.src" :alt="`${icon.name} logo`" class="base-card__icon" />
+          <img :src="asset(icon.src)" :alt="`${icon.name} logo`" class="base-card__icon" />
         </a>
-        <img v-else :src="icon.src" :alt="`${icon.name} logo`" :title="icon.name" class="base-card__icon" />
+        <img v-else :src="asset(icon.src)" :alt="`${icon.name} logo`" :title="icon.name" class="base-card__icon" />
       </template>
     </div>
     <div class="base-card__content">
@@ -35,6 +35,9 @@
 </template>
 
 <script setup lang="ts">
+  const { app } = useRuntimeConfig();
+  const baseURL = app.baseURL;
+
   interface CardImage {
     src: string;
     alt: string;
@@ -51,6 +54,8 @@
     body?: string;
     cardIcons?: CardIcon[];
   }>();
+
+  const asset = (p: string) => `${baseURL.replace(/\/$/, '')}/${p.replace(/^\//, '')}`;
 </script>
 
 <style lang="scss">
