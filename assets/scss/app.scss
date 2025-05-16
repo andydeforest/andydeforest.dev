@@ -1,0 +1,8 @@
+@use "typography";
+@use "variables" as variables;
+@use "bulma/sass";
+
+.is-brutal {
+  box-shadow: variables.$global-box-shadow;
+  border: 1px solid #000;
+}

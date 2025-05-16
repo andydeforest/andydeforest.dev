@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss"
+  ],
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "**/*.vue",
+        "**/*.scss",
+        "**/*.css"
+      ],
+      "customSyntax": "postcss-html"
+    }
+  ],
+  "rules": {
+    "color-hex-length": "short",
+    "max-nesting-depth": 3,
+    "selector-class-pattern": "^[a-z0-9\\-]+$"
+  }
+}

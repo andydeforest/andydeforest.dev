@@ -1,0 +1,27 @@
+{
+  // FORMAT ON SAVE
+  "editor.formatOnSave": true,
+  // ESLINT & STYLELINT FIX ON SAVE
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  // ESLint config
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "vue"
+  ],
+  // Stylelint config
+  "stylelint.validate": [
+    "css",
+    "scss",
+    "vue"
+  ],
+  // Use Prettier as default formatter
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Optional: allow fixing inside <style> blocks in Vue files
+  "css.validate": false,
+  "scss.validate": false
+}

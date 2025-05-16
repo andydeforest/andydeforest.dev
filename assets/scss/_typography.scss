@@ -1,0 +1,95 @@
+@use "bulma/sass/utilities/mixins" as bulmaMixins;
+@use "variables" as variables;
+
+body {
+  font-family: variables.$family-primary;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title,
+.subtitle {
+  font-weight: 900;
+  line-height: 100%;
+  color: variables.$text;
+  font-family: variables.$family-heading !important;
+}
+
+.title {
+  font-size: 3rem !important;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0 variables.$neo-purple;
+
+  @include bulmaMixins.tablet {
+    font-size: 4rem !important;
+  }
+
+  @include bulmaMixins.desktop {
+    font-size: 5rem !important;
+  }
+}
+
+.title.alternate {
+  text-shadow: 3px 3px 0 variables.$primary;
+}
+
+.section-title {
+  padding: 2rem 0;
+
+  @include bulmaMixins.desktop {
+    padding: 4rem 0;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+
+  @include bulmaMixins.tablet {
+    font-size: 2.5rem;
+  }
+
+  @include bulmaMixins.desktop {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-size: 1.75rem;
+
+  @include bulmaMixins.tablet {
+    font-size: 2.25rem;
+  }
+
+  @include bulmaMixins.desktop {
+    font-size: 2.5rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+
+  @include bulmaMixins.tablet {
+    font-size: 1.75rem;
+  }
+
+  @include bulmaMixins.desktop {
+    font-size: 2rem;
+  }
+}
+
+h4 {
+  font-size: 1.25rem;
+
+  @include bulmaMixins.tablet {
+    font-size: 1.5rem;
+  }
+
+  @include bulmaMixins.desktop {
+    font-size: 1.75rem;
+  }
+}
