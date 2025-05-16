@@ -5,7 +5,7 @@
       <BaseCard
         :image="{
           src: '/images/home/tools.svg',
-          alt: 'Icon of a computer screen with tools on it.'
+          alt: 'A briefcase with a cog in front of it.'
         }"
         title="An Extensive Toolbelt"
         body="With over a decade of experience across nearly all facets of development, I've come to know which tools solve problems—rather than create them."
@@ -65,7 +65,7 @@
       <BaseCard
         :image="{
           src: '/images/home/back-end.svg',
-          alt: 'A two-dimensional laptop with the outline of an eye over it.'
+          alt: 'A web page with a cog overlayed on top of it.'
         }"
         title="Back-End"
         body="Let's make your back-end boring! I value stability, predictability, and a general lack of drama in my API designs."

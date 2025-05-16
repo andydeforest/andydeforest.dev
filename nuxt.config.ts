@@ -1,8 +1,9 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+const base = '/andydeforest.dev/';
+
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   app: {
-    baseURL: '/andydeforest.dev/',
+    baseURL: base,
     head: {
       title: 'Andrew De Forest | Portfolio',
       meta: [

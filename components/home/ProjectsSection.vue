@@ -3,7 +3,11 @@
     <h2 class="title section-title alternate my-0">Featured Projects</h2>
     <div class="home-projects-section__project left">
       <div class="home-projects-section__image">
-        <img src="/images/home/projects/tstp/desktop.jpg" class="home-projects-section__image is-brutal" />
+        <img
+          src="/images/home/projects/tstp/desktop.jpg"
+          class="home-projects-section__image is-brutal"
+          alt="Screen capture of the Take Space to Pause website."
+        />
       </div>
       <div class="home-projects-section__copy">
         <h2>Take Space to Pause</h2>
@@ -40,7 +44,11 @@
     </div>
     <div class="home-projects-section__project right">
       <div class="home-projects-section__image">
-        <img src="/images/home/projects/zbv/desktop.jpg" class="home-projects-section__image is-brutal" />
+        <img
+          src="/images/home/projects/zbv/desktop.jpg"
+          class="home-projects-section__image is-brutal"
+          alt="Screen capture of the ZBV Invitational website."
+        />
       </div>
       <div class="home-projects-section__copy">
         <h2>ZBV Invitational Golf Tournament</h2>
@@ -65,7 +73,11 @@
     </div>
     <div class="home-projects-section__project left">
       <div class="home-projects-section__image">
-        <img src="/images/home/projects/personal/generic.jpg" class="home-projects-section__image is-brutal" />
+        <img
+          src="/images/home/projects/personal/generic.jpg"
+          class="home-projects-section__image is-brutal"
+          alt="Pixelated icons of various computer-related items, such as a cursor, pointer, screen, and hour glass."
+        />
       </div>
       <div class="home-projects-section__copy">
         <h2>Quit the Hit - Revitalizing a legacy codebase</h2>
@@ -95,7 +107,11 @@
     </div>
     <div class="home-projects-section__project right">
       <div class="home-projects-section__image">
-        <img src="/images/home/projects/personal/flagle.jpg" class="home-projects-section__image is-brutal" />
+        <img
+          src="/images/home/projects/personal/flagle.jpg"
+          class="home-projects-section__image is-brutal"
+          alt="Screen capture of the Flagle website."
+        />
       </div>
       <div class="home-projects-section__copy">
         <h2>Flagle</h2>

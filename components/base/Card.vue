@@ -1,7 +1,7 @@
 <template>
   <div class="base-card is-brutal">
     <div v-if="image" class="base-card__image">
-      <img :src="image.src" :alt="image.alt" />
+      <img :src="asset(image.src)" :alt="image.alt" />
     </div>
     <div v-if="cardIcons?.length" class="base-card__icons">
       <template v-for="(icon, index) in cardIcons" :key="index">
@@ -55,6 +55,7 @@
     cardIcons?: CardIcon[];
   }>();
 
+  // workaround for static/gh pages hosting
   const asset = (p: string) => `${baseURL.replace(/\/$/, '')}/${p.replace(/^\//, '')}`;
 </script>
 
