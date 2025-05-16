@@ -1,9 +1,9 @@
 <template>
   <header class="base-header is-flex">
     <div class="container base-header__content">
-      <NuxtLink to="/" class="base-header__title">Andrew De Forest</NuxtLink>
-      <nav class="nav-links is-hidden-mobile">
-        <NuxtLink v-for="link in nav.topNav" :key="link.to" :to="link.to" class="nav-link">
+      <NuxtLink to="/#home" class="base-header__title">Andrew De Forest</NuxtLink>
+      <nav class="base-header__nav-links is-hidden-mobile">
+        <NuxtLink v-for="link in nav.topNav" :key="link.to" :to="link.to" class="base-header__nav-link">
           {{ link.label }}
         </NuxtLink>
         <BaseResumeLink />
@@ -45,6 +45,14 @@
 
       @include mixins.desktop {
         font-size: 1.5rem;
+
+        // letter spacing "pulse"
+        transition: letter-spacing 0.2s ease;
+        letter-spacing: 0;
+
+        &:hover {
+          letter-spacing: 1px;
+        }
       }
     }
 
@@ -56,32 +64,32 @@
       align-items: center;
     }
 
-    .nav-links {
+    &__nav-links {
       display: flex;
       gap: 2rem;
-    }
 
-    a {
-      color: $text;
-      font-weight: 500;
-      text-decoration: none;
-      position: relative;
+      a {
+        color: $text;
+        font-weight: 500;
+        text-decoration: none;
+        position: relative;
 
-      &::after {
-        content: '';
-        position: absolute;
-        height: 2px;
-        width: 100%;
-        left: 0;
-        bottom: -4px;
-        background: #000;
-        transform: scaleX(0);
-        transition: transform 0.2s ease-in-out;
-        transform-origin: left;
-      }
+        &::after {
+          content: '';
+          position: absolute;
+          height: 2px;
+          width: 100%;
+          left: 0;
+          bottom: -4px;
+          background: #000;
+          transform: scaleX(0);
+          transition: transform 0.2s ease-in-out;
+          transform-origin: left;
+        }
 
-      &:hover::after {
-        transform: scaleX(1);
+        &:hover::after {
+          transform: scaleX(1);
+        }
       }
     }
   }
