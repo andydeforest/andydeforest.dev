@@ -1,7 +1,10 @@
 <template>
   <header class="base-header is-flex">
     <div class="container base-header__content">
-      <NuxtLink to="/#home" class="base-header__title">Andrew De Forest</NuxtLink>
+      <div class="base-header__title">
+        <NuxtLink to="/#home">Andrew De Forest</NuxtLink>
+      </div>
+
       <nav class="base-header__nav-links is-hidden-mobile">
         <NuxtLink v-for="link in nav.topNav" :key="link.to" :to="link.to" class="base-header__nav-link">
           {{ link.label }}
@@ -35,6 +38,10 @@
     z-index: 9999;
 
     &__title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.3rem;
       font-size: 1.25rem;
       font-weight: 700;
       color: $text;
@@ -43,16 +50,12 @@
       padding: 0.5rem 1rem;
       background: #fff;
 
+      a {
+        color: $text;
+      }
+
       @include mixins.desktop {
         font-size: 1.5rem;
-
-        // letter spacing "pulse"
-        transition: letter-spacing 0.2s ease;
-        letter-spacing: 0;
-
-        &:hover {
-          letter-spacing: 1px;
-        }
       }
     }
 
