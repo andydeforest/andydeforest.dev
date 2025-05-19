@@ -87,7 +87,7 @@
         </ul>
         <p>
           I didn't build this project, but I was brought in to save it. Quit the Hit is a teen vaping cessation
-          platform, that over the years, gradually exceeded it's technical limitations, resulting in long (>60 second)
+          platform, that over the years, gradually exceeded its technical limitations, resulting in long (>60 second)
           loading times, and the occasional memory exhaustion crash.
         </p>
         <p>
@@ -96,7 +96,7 @@
           front-end into Sequelize virtual columns, greatly improving performance. However, I didn't stop there. I
           rebuilt several front-end components from scratch, utilizing strategies such as lazy loading and pagination to
           seamlessly render views. Bloated datatables were replaced with high-performance, scalable tables, all while
-          maintaining backwards-compatability.
+          maintaining backwards-compatibility.
         </p>
         <p>
           <strong>The result?</strong>
@@ -129,7 +129,7 @@
           The game was built as a fun weekend project on Nuxt and deployed to GitHub Pages using GitHub Actions. Behind
           the scenes, it uses a custom JSON file with every country listed, as well as it's geographic center for
           distance calculations. It uses fuse.js for fuzzy searching, as well as Pinia for guess and statistics
-          tracking. The Pinia instance persists using local storage so if the user inavertently refreshes, or wants to
+          tracking. The Pinia instance persists using local storage so if the user inadvertently refreshes, or wants to
           come back later, their progress is saved.
         </p>
       </div>

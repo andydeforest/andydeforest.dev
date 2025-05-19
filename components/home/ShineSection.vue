@@ -84,7 +84,7 @@
           },
           {
             src: '/images/icons/postgres.svg',
-            name: 'Postgresql'
+            name: 'PostgresQL'
           }
         ]"
       >

@@ -3,7 +3,7 @@
     <h2 class="title alternate mb-0 pb-0">Let's Connect</h2>
     <p>
       Whether you're interested in working together, talking shop, or just want to say hi — I’d love to hear from you.
-      Reach out throught a link below:
+      Reach out through a link below:
     </p>
     <ul>
       <li>
@@ -34,7 +34,7 @@
   const emailVisible = ref(false);
   const waiting = ref(false);
 
-  function toggleEmail(e) {
+  function toggleEmail(e: MouseEvent) {
     emailVisible.value = true;
     waiting.value = true;
     setTimeout(() => {
