@@ -110,7 +110,7 @@
         </li>
         <li class="home-shine-section__list-item">
           <span>📝</span>
-          Making lists. TODO: finish this list.
+          Making lists. //TODO: finish this list.
         </li>
       </ul>
     </div>
