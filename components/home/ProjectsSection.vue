@@ -91,8 +91,8 @@
           loading times, and the occasional memory exhaustion crash.
         </p>
         <p>
-          The task was simple: make it usable again. The first step here was profiling the optimizing the least
-          efficient queries, eliminating n+1 patterns. Next, I offloaded several expensive calculations from the
+          The task was simple: make it usable again. The first step here was profiling &amp; optimizing the least
+          efficient queries to eliminate n+1 patterns. Next, I offloaded several expensive calculations from the
           front-end into Sequelize virtual columns, greatly improving performance. However, I didn't stop there. I
           rebuilt several front-end components from scratch, utilizing strategies such as lazy loading and pagination to
           seamlessly render views. Bloated datatables were replaced with high-performance, scalable tables, all while
