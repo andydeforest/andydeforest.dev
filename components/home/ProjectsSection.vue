@@ -52,22 +52,28 @@
       </div>
       <div class="home-projects-section__copy">
         <h2>ZBV Invitational Golf Tournament</h2>
-        <span>Coming soon! (ETA June 2025)</span>
+        <span>
+          <a href="https://zbvinvitational.com/" target="_blank">zbvinvitational.com</a>
+          /
+          <a href="https://github.com/andydeforest/zbvinvitational.com" target="_blank">GitHub</a>
+        </span>
         <ul class="home-projects-section__icons">
           <li><img src="/images/icons/laravel.svg" title="Laravel" alt="Laravel logo." /></li>
           <li><img src="/images/icons/inertia.svg" title="Inertia.js" alt="Inertia logo." /></li>
           <li><img src="/images/icons/vue.svg" title="Vue.js" alt="Vue logo." /></li>
           <li><img src="/images/icons/stripe.svg" title="Stripe" alt="Stripe logo." /></li>
+          <li><img src="/images/icons/postgres.svg" title="Postgresql" alt="Postgresql logo." /></li>
         </ul>
         <p>
-          The Zeke Bondy-Villa Invitational Golf Tournament is a 501(c)(3) charity I do pro-bono work for. Over the last
-          several months, I've undertaken a complete re-build of the site from the ground up. This includes a much
-          faster front-end, built using Inertia.js and Vue.
+          The Zeke Bondy-Villa Invitational Golf Tournament is a 501(c)(3) charity I do pro-bono work for. This project,
+          which I originally built in 2017, was in need of a full rebuild. Aside from a front-end facelift, I added
+          several quality-of-life improvements to the admin panel, where users can now fully manage content such as
+          store products, gallery images, donor logos, and golfer registrations.
         </p>
         <p>
-          Being a charity and a golf tournament, there are several important e-commerce aspects to this site as well.
-          Using Laravel + Laravel Cashier + Stripe, I have built a full-fledged platform for managing donations,
-          registering for tournaments, and managing sponsors.
+          I took a monolithic approach to building this app, leveraging Laravel and Vue via Inertia.js to contain my
+          logic to one centralized repository. I used GitHub Actions to create a simple build script, which
+          automatically manages deployments to both development and production environments on AWS LightSail.
         </p>
       </div>
     </div>
@@ -115,7 +121,11 @@
       </div>
       <div class="home-projects-section__copy">
         <h2>Flagle</h2>
-        <span><a href="https://andydeforest.github.io/flagle/" target="_blank">andydeforest.github.io/flagle</a></span>
+        <span>
+          <a href="https://andydeforest.github.io/flagle/" target="_blank">andydeforest.github.io/flagle</a>
+          /
+          <a href="https://github.com/andydeforest/flagle" target="_blank">GitHub</a>
+        </span>
         <ul class="home-projects-section__icons">
           <li><img src="/images/icons/nuxt.svg" title="Nuxt.js" alt="Nuxt.js logo." /></li>
           <li><img src="/images/icons/github-actions.svg" title="GitHub Actions" alt="GitHub Actions logo." /></li>
